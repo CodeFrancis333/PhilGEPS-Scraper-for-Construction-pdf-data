@@ -1,13 +1,13 @@
 """
 philgeps_boq_pdf_scraper.py                        2025-06-23
 ---------------------------------------------------------------------------
-• Sweeps from ANCHOR_ID downward for BACKWARD_WINDOW IDs
-• Accepts notice if Category = "Construction Projects" OR
+- Sweeps from ANCHOR_ID downward for BACKWARD_WINDOW IDs
+- Accepts notice if Category = "Construction Projects" OR
   Title contains construction|building|structural
-• If a BOQ attachment PDF exists, downloads and parses it
+- If a BOQ attachment PDF exists, downloads and parses it
   otherwise (if Playwright is available) prints the whole page to PDF
-• All PDFs are zipped; BOQ PDFs are also converted to CSV
-• Keeps ZIP+CSV storage ≤ MAX_BYTES (20 GiB)
+- All PDFs are zipped; BOQ PDFs are also converted to CSV
+- Keeps ZIP+CSV storage ≤ MAX_BYTES (20 GiB)
 """
 
 # ---------- USER SETTINGS ------------------------------------------
