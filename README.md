@@ -64,5 +64,3 @@ CSV saved
 <li><strong>STOP_WHEN_FULL:</strong> Hard‑stop when disk cap hit: <em>True for cron jobs</em></li>
 <li><strong>ROLLING_PRUNE:</strong> Delete oldest ZIPs once over cap: <em>True when archiving</em></li>
 </ul>
-<h3>Contributing</h3>
-Pull requests are welcome!  Please open an issue first if you plan major changes (multi‑process downloads, database back‑end, etc.) so we can discuss architecture.
