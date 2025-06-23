@@ -45,7 +45,9 @@ python -m venv .venv
 pip install -r requirements.txt
 python -m playwright install chromium
 
-# 4) run a 300‑ID smoke test (edit constants in the script)
+# 4) create boq_raw folder (this where pdf files go)
+boq_raw/
+# 5) run a 300‑ID smoke test (edit constants in the script)
 python philgeps_boq_pdf_scraper.py
 </pre>
 
