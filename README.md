@@ -1,7 +1,7 @@
-<h2>PhilGEPS BOQ Scraper</h2>
+<h1>PhilGEPS BOQ Scraper</h1>
 
 A Python 3.11 command‑line tool that bulk‑downloads Bill‑of‑Quantities (BOQ) files from the Philippine Government Electronic Procurement System (PhilGEPS). <br>
-"Exports Construction Projects PDF automatically from PhilGEPS website."
+<em>"Exports Construction Projects PDF automatically from PhilGEPS website."</em>
 
 Features
 1. BOQ download & parse - Detects PDF/XLS BOQ attachments, converts them to tidy CSV (Tabula‑py → Camelot fallback). <br>
@@ -10,7 +10,7 @@ Features
 4. Category/title filter - Only grabs Construction Projects or titles containing construction, building, or structural. <br>
 5. Rolling prune / hard stop - Keeps disk usage predictable on long runs.
 
-Project Structure
+<h2>Project Structure</h2>
 philgeps_scraper/
 ├─ .venv/               # local virtual‑env (ignored by Git)<br>
 ├─ boq_raw/             # downloaded PDFs or page‑print PDFs (git‑ignored)<br>
@@ -19,7 +19,7 @@ philgeps_scraper/
 ├─ requirements.txt     # exact package pins<br>
 └─ README.md            # this file<br>
 
-Requirements
+<h2>Requirements</h2>
 Python: 3.11 (Async‑safe Playwright & modern pandas)
 Java: 8 u181 (Needed by Tabula‑py)
 Playwright: 1.43.0 (Headless Chromium printing)
