@@ -56,11 +56,12 @@ CSV saved
 
 <h3>Configuration</h3>
 <em>All tweakable constants live near the top of philgeps_boq_pdf_scraper.py.<br></em>
-ANCHOR_ID: First bidNoticeId to process (8 digits): e.g. 11491800<br>
-BACKWARD_WINDOW: How many IDs to scan below the anchor: 300 … 20000<br>
-SLEEP_SEC: Delay per thread between requests: 0.3 – 1<br>
-STOP_WHEN_FULL: Hard‑stop when disk cap hit: True for cron jobs<br>
-ROLLING_PRUNE: Delete oldest ZIPs once over cap: True when archiving<br>
-
-Contributing
+<ol>
+<li><strong>ANCHOR_ID:</strong> First bidNoticeId to process (8 digits): <em>e.g. 11491800</em></li>
+<li><strong>BACKWARD_WINDOW:</strong> How many IDs to scan below the anchor: <em>300 … 20000</em></li>
+<li><strong>SLEEP_SEC:</strong> Delay per thread between requests: <em>0.3 – 1</em></li>
+<li><strong>STOP_WHEN_FULL:</strong> Hard‑stop when disk cap hit: <em>True for cron jobs</em></li>
+<li><strong>ROLLING_PRUNE:</strong> Delete oldest ZIPs once over cap: <em>True when archiving</em></li>
+</ol>
+<h3>Contributing</h3>
 Pull requests are welcome!  Please open an issue first if you plan major changes (multi‑process downloads, database back‑end, etc.) so we can discuss architecture.
