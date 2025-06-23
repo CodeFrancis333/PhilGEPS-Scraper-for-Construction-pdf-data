@@ -3,7 +3,7 @@
 A Python 3.11 command‑line tool that bulk‑downloads Bill‑of‑Quantities (BOQ) files from the Philippine Government Electronic Procurement System (PhilGEPS). <br>
 <em>"Exports Construction Projects PDF automatically from PhilGEPS website."</em>
 
-Features
+<h2>Features</h2>
 1. BOQ download & parse - Detects PDF/XLS BOQ attachments, converts them to tidy CSV (Tabula‑py → Camelot fallback). <br>
 2. Playwright fallback - If a notice has no BOQ attachment, the entire page is printed to PDF headlessly. <br>
 3. Polite scraping - Configurable sleep interval (SLEEP_SEC) and storage cap (20 GiB by default) to avoid hammering PhilGEPS. <br>
@@ -27,7 +27,7 @@ Chromium (Playwright): python -m playwright install chromium
 
 All Python packages are pinned in requirements.txt.
 
-Quick Start
+<h2>Quick Start</h2>
 <pre>
 # 1) clone & enter folder
 git clone https://github.com/<your‑user>/philgeps_scraper.git
