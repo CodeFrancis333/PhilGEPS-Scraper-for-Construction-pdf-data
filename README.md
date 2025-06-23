@@ -4,11 +4,12 @@ A Python 3.11 command‑line tool that bulk‑downloads Bill‑of‑Quantities
 <em>"Exports Construction Projects PDF automatically from PhilGEPS website."</em>
 
 <h2>Features</h2>
-1. BOQ download & parse - Detects PDF/XLS BOQ attachments, converts them to tidy CSV (Tabula‑py → Camelot fallback). <br>
-2. Playwright fallback - If a notice has no BOQ attachment, the entire page is printed to PDF headlessly. <br>
-3. Polite scraping - Configurable sleep interval (SLEEP_SEC) and storage cap (20 GiB by default) to avoid hammering PhilGEPS. <br>
-4. Category/title filter - Only grabs Construction Projects or titles containing construction, building, or structural. <br>
-5. Rolling prune / hard stop - Keeps disk usage predictable on long runs.
+<ol>
+<li><strong>BOQ download & parse:</strong> Detects PDF/XLS BOQ attachments, converts them to tidy CSV (Tabula‑py → Camelot fallback). </li>
+<li><strong>Playwright fallback:</strong> If a notice has no BOQ attachment, the entire page is printed to PDF headlessly. </li>
+<li><strong>Polite scraping:</strong> Configurable sleep interval (SLEEP_SEC) and storage cap (20 GiB by default) to avoid hammering PhilGEPS. </li>
+<li><strong>Category/title filter:</strong> Only grabs Construction Projects or titles containing construction, building, or structural. </li>
+</ol>
 
 <h2>Project Structure</h2>
 philgeps_scraper/ <br>
@@ -56,12 +57,12 @@ CSV saved
 
 <h3>Configuration</h3>
 <em>All tweakable constants live near the top of philgeps_boq_pdf_scraper.py.<br></em>
-<ol>
+<ul>
 <li><strong>ANCHOR_ID:</strong> First bidNoticeId to process (8 digits): <em>e.g. 11491800</em></li>
 <li><strong>BACKWARD_WINDOW:</strong> How many IDs to scan below the anchor: <em>300 … 20000</em></li>
 <li><strong>SLEEP_SEC:</strong> Delay per thread between requests: <em>0.3 – 1</em></li>
 <li><strong>STOP_WHEN_FULL:</strong> Hard‑stop when disk cap hit: <em>True for cron jobs</em></li>
 <li><strong>ROLLING_PRUNE:</strong> Delete oldest ZIPs once over cap: <em>True when archiving</em></li>
-</ol>
+</ul>
 <h3>Contributing</h3>
 Pull requests are welcome!  Please open an issue first if you plan major changes (multi‑process downloads, database back‑end, etc.) so we can discuss architecture.
