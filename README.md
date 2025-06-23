@@ -11,7 +11,7 @@ A Python 3.11 command‑line tool that bulk‑downloads Bill‑of‑Quantities
 5. Rolling prune / hard stop - Keeps disk usage predictable on long runs.
 
 <h2>Project Structure</h2>
-philgeps_scraper/
+philgeps_scraper/ <br>
 ├─ .venv/               # local virtual‑env (ignored by Git)<br>
 ├─ boq_raw/             # downloaded PDFs or page‑print PDFs (git‑ignored)<br>
 ├─ boq_clean/           # extracted CSVs (git‑ignored)<br>
@@ -54,8 +54,8 @@ PDF saved
 CSV saved
 </strong></pre>
 
-Configuration
-All tweakable constants live near the top of philgeps_boq_pdf_scraper.py.<br>
+<h3>Configuration</h3>
+<em>All tweakable constants live near the top of philgeps_boq_pdf_scraper.py.<br></em>
 ANCHOR_ID: First bidNoticeId to process (8 digits): e.g. 11491800<br>
 BACKWARD_WINDOW: How many IDs to scan below the anchor: 300 … 20000<br>
 SLEEP_SEC: Delay per thread between requests: 0.3 – 1<br>
