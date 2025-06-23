@@ -28,6 +28,7 @@ Chromium (Playwright): python -m playwright install chromium
 All Python packages are pinned in requirements.txt.
 
 Quick Start
+<pre>
 # 1) clone & enter folder
 git clone https://github.com/<your‑user>/philgeps_scraper.git
 cd philgeps_scraper
@@ -42,13 +43,15 @@ python -m playwright install chromium
 
 # 4) run a 300‑ID smoke test (edit constants in the script)
 python philgeps_boq_pdf_scraper.py
+</pre>
 
 The first log lines should look like:
-
+<pre>
 Sweeping 11491800 down to 11491500 - 301 IDs
 Downloading BOQ PDF for 11491742
 PDF saved
 CSV saved
+</pre>
 
 Configuration
 All tweakable constants live near the top of philgeps_boq_pdf_scraper.py.<br>
