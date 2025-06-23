@@ -12,12 +12,12 @@ Features
 
 Project Structure
 philgeps_scraper/
-├─ .venv/               # local virtual‑env (ignored by Git)
-├─ boq_raw/             # downloaded PDFs or page‑print PDFs (git‑ignored)
-├─ boq_clean/           # extracted CSVs (git‑ignored)
-├─ philgeps_boq_pdf_scraper.py  # main script
-├─ requirements.txt     # exact package pins
-└─ README.md            # this file
+├─ .venv/               # local virtual‑env (ignored by Git)<br>
+├─ boq_raw/             # downloaded PDFs or page‑print PDFs (git‑ignored)<br>
+├─ boq_clean/           # extracted CSVs (git‑ignored)<br>
+├─ philgeps_boq_pdf_scraper.py  # main script<br>
+├─ requirements.txt     # exact package pins<br>
+└─ README.md            # this file<br>
 
 Requirements
 Python: 3.11 (Async‑safe Playwright & modern pandas)
@@ -51,12 +51,12 @@ PDF saved
 CSV saved
 
 Configuration
-All tweakable constants live near the top of philgeps_boq_pdf_scraper.py.
-ANCHOR_ID: First bidNoticeId to process (8 digits): e.g. 11491800
-BACKWARD_WINDOW: How many IDs to scan below the anchor: 300 … 20000
-SLEEP_SEC: Delay per thread between requests: 0.3 – 1
-STOP_WHEN_FULL: Hard‑stop when disk cap hit: True for cron jobs
-ROLLING_PRUNE: Delete oldest ZIPs once over cap: True when archiving
+All tweakable constants live near the top of philgeps_boq_pdf_scraper.py.<br>
+ANCHOR_ID: First bidNoticeId to process (8 digits): e.g. 11491800<br>
+BACKWARD_WINDOW: How many IDs to scan below the anchor: 300 … 20000<br>
+SLEEP_SEC: Delay per thread between requests: 0.3 – 1<br>
+STOP_WHEN_FULL: Hard‑stop when disk cap hit: True for cron jobs<br>
+ROLLING_PRUNE: Delete oldest ZIPs once over cap: True when archiving<br>
 
 Contributing
 Pull requests are welcome!  Please open an issue first if you plan major changes (multi‑process downloads, database back‑end, etc.) so we can discuss architecture.
