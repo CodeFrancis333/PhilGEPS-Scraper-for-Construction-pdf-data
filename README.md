@@ -1,6 +1,6 @@
 <h1>PhilGEPS BOQ Scraper</h1>
 
-A Python 3.11 command‑line tool that bulk‑downloads Bill‑of‑Quantities (BOQ) files from the Philippine Government Electronic Procurement System (PhilGEPS). <br>
+A Python 3.11 command‑line tool that bulk‑downloads PDF files from the Philippine Government Electronic Procurement System (PhilGEPS). <br>
 <em>"Exports Construction Projects PDF automatically from PhilGEPS website."</em>
 
 <h2>Features</h2>
