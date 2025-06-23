@@ -47,12 +47,12 @@ python philgeps_boq_pdf_scraper.py
 </pre>
 
 The first log lines should look like:
-<pre>
+<pre><strong>
 Sweeping 11491800 down to 11491500 - 301 IDs
 Downloading BOQ PDF for 11491742
 PDF saved
 CSV saved
-</pre>
+</strong></pre>
 
 Configuration
 All tweakable constants live near the top of philgeps_boq_pdf_scraper.py.<br>
