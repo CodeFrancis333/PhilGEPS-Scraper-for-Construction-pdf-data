@@ -21,10 +21,12 @@ philgeps_scraper/ <br>
 └─ README.md            # this file<br>
 
 <h2>Requirements</h2>
-Python: 3.11 (Async‑safe Playwright & modern pandas)
-Java: 8 u181 (Needed by Tabula‑py)
-Playwright: 1.43.0 (Headless Chromium printing)
-Chromium (Playwright): python -m playwright install chromium
+<ul>
+<li><strong>Python:</strong> 3.11 (Async‑safe Playwright & modern pandas)</li>
+<li><strong>Java:</strong> 8 u181 (Needed by Tabula‑py)</li>
+<li><strong>Playwright:</strong> 1.43.0 (Headless Chromium printing)</li>
+<li><strong>Chromium (Playwright):</strong> python -m playwright install chromium</li>
+</ul>
 
 All Python packages are pinned in requirements.txt.
 
