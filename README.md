@@ -32,7 +32,7 @@ All Python packages are pinned in requirements.txt.
 <pre>
   
 # 1) clone & enter folder
-git clone https://github.com/<your‑user>/philgeps_scraper.git
+git clone (https://github.com/CodeFrancis333/PhilGEPS-Scraper-for-Construction-pdf-data.git)
 cd philgeps_scraper
 
 # 2) create & activate venv (Windows example)
